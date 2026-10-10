@@ -1,0 +1,65 @@
+title: ASMR 2026
+description: >-
+  Course guide and project materials for 2026-2 Actuation and Sensing Mechanism
+  Design for Robots (001), Seoul National University.
+theme: just-the-docs
+
+# GitHub Pages project site: https://snu-srbl.github.io/asmr2026-docs/
+# The Pages workflow sets baseurl automatically; it is set here so local
+# previews use the same paths as the published site.
+url: https://snu-srbl.github.io
+baseurl: /asmr2026-docs
+
+# Official course notices, homework, and submissions live on eTL.
+etl_url: https://myetl.snu.ac.kr
+
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+
+aux_links:
+  "eTL (official notices & submissions)": https://myetl.snu.ac.kr
+  "GitHub": https://github.com/SNU-SRBL/asmr2026-docs
+aux_links_new_tab: true
+
+# "Edit this page on GitHub" link at the bottom of each page
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: https://github.com/SNU-SRBL/asmr2026-docs
+gh_edit_branch: main
+gh_edit_view_mode: tree
+
+footer_content: >-
+  2026-2 Actuation and Sensing Mechanism Design for Robots (001), Seoul National University.
+  Official notices, homework, and submissions are on <a href="https://myetl.snu.ac.kr">eTL</a>.
+
+# Callouts, used as:  {: .note }  /  {: .soon }
+callouts:
+  note:
+    title: Note
+    color: blue
+  important:
+    title: Important
+    color: purple
+  warning:
+    title: Warning
+    color: red
+  soon:
+    title: Coming soon
+    color: yellow
+
+# Use the theme's page layout for every page (index.md overrides with layout: home)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/

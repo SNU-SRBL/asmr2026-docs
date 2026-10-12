@@ -23,33 +23,16 @@ Course notices, homework, and presentation submissions are on [eTL]({{ site.etl_
 
 ## About the course
 
-In this course, you will build a bipedal humanoid robot as a team:
+This is a project-based course in which students work in teams to build and program a bipedal humanoid robot. The course provides guides, hardware components, firmware, and starter software; teams use these resources to complete the project and gain hands-on experience in:
 
-- **Hardware:** build 3d-printed quasi-direct-drive actuators, then the full robot structure, including the computer and the battery and power circuits.
-- **Electronics and firmware:** understand CAN communication and motor driver firmware, such as field-oriented control (FOC) and torque control.
-- **Low-level software:** understand the low-level runtime program that runs the humanoid.
-- **Robot Learning:** learn reinforcement learning in simulation, train your own locomotion policy, and make your humanoid walk in the real world, carrying out your team's own idea.
-
-{: .note }
-For the lecture schedule and all course announcements, follow the notices on [eTL]({{ site.etl_url }}).
+- **Hardware:** Building 3D-printed quasi-direct-drive actuators and assembling the robot, including its computer, battery, and power circuits.
+- **Electronics and firmware:** Working with CAN communication and motor-driver firmware, including field-oriented control (FOC) and torque control.
+- **Low-level software:** Understanding and adapting the runtime software that operates the humanoid.
+- **Robot learning:** Training a locomotion policy with reinforcement learning in simulation, transferring it to the real robot, and developing a team-designed task.
 
 ## The humanoid robot project
 
-Since 2024, the course has included a team project to build a humanoid robot. This semester, teams build a **modified bipedal version of [Berkeley Humanoid Lite]({{ '/start-here/berkeley-humanoid-lite/' | relative_url }})**:
-
-1. **Build the actuators** that drive the robot's joints.
-2. **Build the full structure** of the bipedal humanoid.
-3. **Train a locomotion policy** with reinforcement learning in simulation and transfer it to the real robot so it walks.
-4. **Make the robot do a task** of your team's own design.
-
-### What the course provides
-
-The course provides skeleton materials to build on:
-
-- **Guides** for each stage of the project (on this site)
-- **Hardware** for the robot platform
-- **Firmware**, such as for the motor driver board
-- **Software**, such as low-level runtime code and a CAN library
+Since 2024, the course has included a team project to build a humanoid robot. This semester, teams build a **modified bipedal version of [Berkeley Humanoid Lite]({{ '/start-here/berkeley-humanoid-lite/' | relative_url }})** and then use their robot to carry out a task of their own design.
 
 ### Make it your own
 

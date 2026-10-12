@@ -53,7 +53,7 @@ Materials are published as the course progresses. Pages marked
 | [Berkeley Humanoid Lite reference](start-here/berkeley-humanoid-lite/) | Start Here | <span class="label label-green">Available</span> |
 | [Bill of materials (BOM)](hardware/bom/) | Robot Hardware | <span class="label label-green">Available</span> |
 | [Actuator assembly guide](hardware/actuator-assembly/) | Robot Hardware | <span class="label label-blue">Partly available</span> |
-| [Motor driver guide](hardware/motor-driver/) | Robot Hardware | <span class="label label-yellow">Coming soon</span> |
+| [Motor driver guide](hardware/motor-driver/) | Robot Hardware | <span class="label label-blue">Partly available</span> |
 | [Full robot assembly](hardware/robot-assembly/) | Robot Hardware | <span class="label label-yellow">Coming soon</span> |
 | [Onshape CAD](cad-to-robot/onshape-cad/) | From CAD to Robot | <span class="label label-yellow">Coming soon</span> |
 | [Onshape-to-robot guide](cad-to-robot/onshape-to-robot/) | From CAD to Robot | <span class="label label-yellow">Coming soon</span> |

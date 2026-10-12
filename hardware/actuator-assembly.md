@@ -72,7 +72,7 @@ Side view, not to scale. Left: 6512 actuator with the 6 mm magnet extender. Righ
 {: .fs-2 .text-grey-dk-000 }
 
 {: .note }
-The magnet extender heights are designed for the provided rotary magnet, which is **2 mm** tall. Before assembling, check the height of your magnet and compare it with the diagram above.
+The magnet extender heights are designed for the provided rotary magnet, which is **2 mm** tall. Before assembling, check the height of your magnet and compare it with the diagram above. We recommend an air gap of **0.5–3 mm** between the magnet and the encoder.
 
 <img src="{{ '/assets/images/actuator/20260727_220649_IMG.jpg' | relative_url }}" alt="Close-up of the motor shaft through the center opening of the motor mount, with the magnet extender and the rotary magnet attached on top of the shaft." style="max-width: 240px; width: 100%;">
 

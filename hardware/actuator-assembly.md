@@ -33,9 +33,6 @@ Because of the new driver board, a few parts are changed or added:
 | Motor shell v2 | 5010 | <a href="{{ '/assets/downloads/actuator/motor-shell-v2-5010.step' | relative_url }}" download>motor-shell-v2-5010.step</a> |
 | Driver board spacer | 6512, 5010 | <a href="{{ '/assets/downloads/actuator/driver-board-spacer.stl' | relative_url }}" download>driver-board-spacer.stl</a> |
 
-{: .note }
-The motor shell v2 files are STEP files. Import them into your slicer, or convert them to STL in your CAD software, before printing.
-
 ## 1. Get the 3D print files
 
 {: .important }
@@ -68,11 +65,13 @@ Place the **magnet extender** between the motor shaft and the rotary magnet. You
 
 ![Side view of the stacking order for the 6512 and 5010 actuators. From top to bottom: XDrive driver board, encoder on the back of the board, rotary magnet (2 mm tall), magnet extender (6 mm tall for the 6512, 3 mm tall for the 5010), and motor.]({{ '/assets/images/actuator/image_magnet_extend_guide.png' | relative_url }})
 
-Side view, not to scale. Left: 6512 actuator with the 6 mm magnet extender. Right: 5010 actuator with the 3 mm magnet extender. The rotary magnet is 2 mm tall.
+Side view, not to scale. Left: 6512 actuator with the 6 mm magnet extender. Right: 5010 actuator with the 3 mm magnet extender. The magnet in this diagram is 2 mm tall.
 {: .fs-2 .text-grey-dk-000 }
 
-{: .note }
-The magnet extender heights are designed for the provided rotary magnet, which is **2 mm** tall. Before assembling, check the height of your magnet and compare it with the diagram above. We recommend an air gap of **0.5–3 mm** between the magnet and the encoder.
+{: .important }
+> The rotary magnet that comes with the XDrive MINI is **6 mm in diameter and 2.5 mm tall**, slightly taller than the 2 mm magnet in the diagram. Magnet dimensions can vary, so **measure your magnet before assembling**.
+>
+> Make sure the air gap between the magnet and the encoder stays within **0.5–3 mm**, as we recommend.
 
 <img src="{{ '/assets/images/actuator/20260727_220649_IMG.jpg' | relative_url }}" alt="Close-up of the motor shaft through the center opening of the motor mount, with the magnet extender and the rotary magnet attached on top of the shaft." style="max-width: 240px; width: 100%;">
 
@@ -90,7 +89,53 @@ The assembled actuator, seen from the driver board side:
 
 <!-- IMAGE / TA: more course-specific assembly steps (driver board spacer, motor shell v2). -->
 
-{: .soon }
-Our soldering guide for the motor and the motor driver will be provided soon.
+### Soldering the wires
 
-<!-- TA: when the soldering guide is ready, add it here and remove the "Coming soon" callout. -->
+The XDrive MINI comes with screw terminal blocks, as in the photos above. Terminal blocks are fine for testing a single actuator, but for the full robot you need to **remove them and solder the wires directly to the board**.
+
+#### Tools
+
+- **Long-nose pliers**
+- **Magnetic PCB holder**: a steel base plate with neodymium magnetic posts that hold the board in place while you solder
+- **Soldering iron** and solder
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end;">
+  <img src="{{ '/assets/images/actuator/tool-long-nose-pliers.jpg' | relative_url }}" alt="Long-nose pliers." style="flex: 0 1 180px; max-width: 100%; min-width: 0;">
+  <img src="{{ '/assets/images/actuator/tool-magnetic-pcb-holder.jpg' | relative_url }}" alt="Magnetic PCB holder: a steel base plate with four magnetic posts holding a circuit board above it." style="flex: 0 1 240px; max-width: 100%; min-width: 0;">
+</div>
+
+Left: long-nose pliers. Right: magnetic PCB holder.
+{: .fs-2 .text-grey-dk-000 }
+
+#### 1. Remove the terminal blocks
+
+Fix the driver board in the magnetic PCB holder. Hold the terminal block with the long-nose pliers, and heat its solder joints with the soldering iron until the block comes off the board.
+
+<img src="{{ '/assets/images/actuator/terminal-block-removal.jpg' | relative_url }}" alt="Back of the XDrive MINI driver board held in a magnetic PCB holder. A soldering iron heats the terminal block's solder joints while long-nose pliers hold the removed terminal block." style="max-width: 480px; width: 100%;">
+
+Removing the terminal block at the soldering station.
+{: .fs-2 .text-grey-dk-000 }
+
+#### 2. Solder the wires
+
+Solder the wires directly to the pads where the terminal blocks were:
+
+- **A, B, C:** the three BLDC motor phase wires
+- **DC +, DC −:** the power wires
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
+  <img src="{{ '/assets/images/actuator/soldered-wires-front.jpg' | relative_url }}" alt="XDrive MINI driver board with the terminal blocks removed. Three black motor phase wires are soldered to pads A, B, and C, and red and black power wires to DC plus and minus." style="flex: 1 1 260px; max-width: 100%; min-width: 0;">
+  <img src="{{ '/assets/images/actuator/soldered-wires-angle.jpg' | relative_url }}" alt="Angled view of an assembled actuator with motor and power wires soldered directly to the driver board, connected to a bench power supply." style="flex: 1 1 260px; max-width: 100%; min-width: 0;">
+</div>
+
+Examples of finished actuators with the wires soldered directly to the board.
+{: .fs-2 .text-grey-dk-000 }
+
+#### 3. Secure the wires
+
+To keep the wiring tidy and stop the solder joints from being strained, we recommend fixing the wires to the board with a **hot glue gun**, as shown below.
+
+<img src="{{ '/assets/images/actuator/soldered-wires-hot-glue.jpg' | relative_url }}" alt="Actuator mounted in the robot leg, with the motor and power wires fixed to the driver board with hot glue over the solder joints." style="max-width: 320px; width: 100%;">
+
+Wires fixed to the board with hot glue, on an actuator mounted in the robot.
+{: .fs-2 .text-grey-dk-000 }

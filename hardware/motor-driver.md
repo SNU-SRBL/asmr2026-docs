@@ -61,5 +61,6 @@ See the repository's README for the details of what was changed and how to confi
 ## Flashing firmware
 
 If your firmware is a `.bin`, `.hex`, or `.elf` file, we recommend **STM32CubeProgrammer** from STMicroelectronics to flash it quickly.
+To flash the firmware, you'll need an **ST-Link V2** programmer, connected to the driver board's SWD pins.
 
 [STM32CubeProgrammer (STMicroelectronics)](https://www.st.com/en/development-tools/stm32cubeprog.html){: .btn }

@@ -35,7 +35,7 @@ Over the semester you will:
 | Section | What's inside |
 |:--------|:--------------|
 | [Start Here](start-here/) | Course introduction and the Berkeley Humanoid Lite reference |
-| [Robot Hardware](hardware/) | Bill of materials, actuator assembly, motor driver, full robot assembly |
+| [Robot Hardware](hardware/) | Bill of materials, actuator assembly, motor driver, USB-to-CAN adapter, full robot assembly |
 | [From CAD to Robot](cad-to-robot/) | Onshape CAD and converting it to a robot description |
 | [Simulation and Learning](simulation/) | Actuator modeling, Isaac Sim, mjlab, RL and sim-to-real workflow |
 | [Downloads and Versions](downloads/) | Released files, such as the robot XML, and their version history |
@@ -53,7 +53,8 @@ Materials are published as the course progresses. Pages marked
 | [Berkeley Humanoid Lite reference](start-here/berkeley-humanoid-lite/) | Start Here | <span class="label label-green">Available</span> |
 | [Bill of materials (BOM)](hardware/bom/) | Robot Hardware | <span class="label label-green">Available</span> |
 | [Actuator assembly guide](hardware/actuator-assembly/) | Robot Hardware | <span class="label label-green">Available</span> |
-| [Motor driver guide](hardware/motor-driver/) | Robot Hardware | <span class="label label-blue">Partly available</span> |
+| [Motor driver guide](hardware/motor-driver/) | Robot Hardware | <span class="label label-green">Available</span> |
+| [USB-to-CAN adapter](hardware/usb-can-adapter/) | Robot Hardware | <span class="label label-green">Available</span> |
 | [Full robot assembly](hardware/robot-assembly/) | Robot Hardware | <span class="label label-yellow">Coming soon</span> |
 | [Onshape CAD](cad-to-robot/onshape-cad/) | From CAD to Robot | <span class="label label-yellow">Coming soon</span> |
 | [Onshape-to-robot guide](cad-to-robot/onshape-to-robot/) | From CAD to Robot | <span class="label label-yellow">Coming soon</span> |

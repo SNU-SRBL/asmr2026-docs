@@ -10,27 +10,32 @@ Built with [Jekyll](https://jekyllrb.com) and the [Just the Docs](https://just-t
 ## Site structure
 
 ```
-index.md                 Home page (includes the material status table)
+index.md                 Home page: project overview, section table, material status, gallery
 start-here/              Start Here: course introduction, Berkeley Humanoid Lite
-hardware/                Robot Hardware: BOM, actuator assembly, motor driver, robot assembly
+hardware/                Robot Hardware: BOM, actuator assembly, motor driver, USB-to-CAN adapter,
+                         body system, low-level software, full robot assembly
 cad-to-robot/            From CAD to Robot: Onshape CAD, onshape-to-robot
-simulation/              Simulation and Learning: actuator modeling, Isaac Sim, mjlab, RL / sim-to-real
+simulation/              Simulation and Learning: robot model (v1), actuator modeling,
+                         Isaac Sim and Isaac Lab, mjlab, real robot safety
+references/              References
 downloads/               Downloads and Versions: released files and version history
 help.md                  Help
+assets/downloads/        Released files (actuator parts, leg structure STLs, robot model package)
+assets/images/           Images, one folder per topic
+_includes/head_custom.html  Opens links to other websites in a new tab
 _config.yml              Site settings (title, eTL link, callouts, navigation links)
 .github/workflows/       pages.yml deploys to GitHub Pages; ci.yml test-builds pull requests
 ```
 
 Each section is a folder with an `index.md` (`has_children: true`); pages inside it set `parent:` to the section title and `nav_order:` for their position in the sidebar.
 
-## Publishing a placeholder page
+## Updating the site
 
-Placeholder pages contain a `Coming soon` label, a `{: .soon }` callout, and an HTML comment starting with `TA:`. When the material is ready:
-
-1. Replace the placeholder content in the page.
-2. Remove the `Coming soon` label and the `{: .soon }` callout.
-3. In `index.md`, change the page's status in the "Material status" table to `<span class="label label-green">Available</span>`.
-4. For released files, add a row to the version history in `downloads/index.md`.
+- **New page:** copy an existing page in the same section, change `title`, `nav_order`, and `permalink`, and write the content.
+- **New released file:** put it in `assets/downloads/` (no spaces in file names), link it from its page, and add a row to the version history in `downloads/index.md`.
+- **New image:** put it in `assets/images/<topic>/`. Keep photos under about 1600 px and 500 KB, and remove GPS data from phone photos before adding them.
+- **Status:** the "Material status" table in `index.md` shows one row per section. Use `label-green` (Available), `label-blue` (Partly available), or `label-yellow` (Coming soon).
+- **Notes for maintainers:** HTML comments starting with `TA:` mark places where more content can be added. Students don't see them.
 
 Useful formatting: callouts `{: .note }`, `{: .important }`, `{: .warning }`, `{: .soon }` placed on the line above a paragraph. See the [Just the Docs documentation](https://just-the-docs.github.io/just-the-docs/) for more.
 

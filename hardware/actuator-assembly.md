@@ -36,7 +36,7 @@ Because of the new driver board, a few parts are changed or added:
 ## 1. Get the 3D print files
 
 {: .important }
-This step covers the **actuators only**. Files and instructions for the rest of the robot body will come with the [Full Robot Assembly]({{ '/hardware/robot-assembly/' | relative_url }}) guide.
+This step covers the **actuators only**. Files and instructions for the rest of the robot body are in the [Full Robot Assembly]({{ '/hardware/robot-assembly/' | relative_url }}) guide.
 
 On the upstream **Releases** page, under *3D Printing Project Files*, get the files for the **6512 Actuator** and the **5010 Actuator**. Then replace the upstream motor shell with our **motor shell v2**, and add the **magnet extender** and **driver board spacer** from the table above.
 

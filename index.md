@@ -25,41 +25,48 @@ Course guide and project materials for **2026-2 Actuation and Sensing Mechanism 
 
 Over the semester you will:
 
-1. **Assemble** a small humanoid robot based on the open-source [Berkeley Humanoid Lite](start-here/berkeley-humanoid-lite/).
+1. **Assemble** a bipedal humanoid robot, a modified version of the open-source [Berkeley Humanoid Lite](start-here/berkeley-humanoid-lite/).
 2. **Model** the robot and its actuators so it can be simulated.
 3. **Train** a walking policy with reinforcement learning in simulation.
 4. **Transfer** the policy from simulation to the real robot (sim-to-real).
+5. **Carry out** a task of your team's own design.
 
 ## Where to find things
 
 | Section | What's inside |
 |:--------|:--------------|
 | [Start Here](start-here/) | Course introduction and the Berkeley Humanoid Lite reference |
-| [Robot Hardware](hardware/) | Bill of materials, actuator assembly, motor driver, USB-to-CAN adapter, full robot assembly |
+| [Robot Hardware](hardware/) | Bill of materials, actuator assembly, motor driver, USB-to-CAN adapter, body system, low-level software, full robot assembly |
 | [From CAD to Robot](cad-to-robot/) | Onshape CAD and converting it to a robot description |
-| [Simulation and Learning](simulation/) | Actuator modeling, Isaac Sim, mjlab, RL and sim-to-real workflow |
-| [Downloads and Versions](downloads/) | Released files, such as the robot XML, and their version history |
+| [Simulation and Learning](simulation/) | Robot model (MuJoCo / mjlab), actuator modeling, Isaac Sim and Isaac Lab, mjlab, real robot safety |
+| [References](references/) | References for the course project |
+| [Downloads and Versions](downloads/) | Released files (part files and the robot model) and their version history |
 | [Help](help/) | Where to ask questions and how to report problems with this site |
 
 ## Material status
 
-Materials are published as the course progresses. Pages marked
-<span class="label label-yellow">Coming soon</span> are placeholders, and pages marked
-<span class="label label-blue">Partly available</span> are usable but still have parts on the way.
+Materials are published as the course progresses. Sections marked
+<span class="label label-blue">Partly available</span> are usable but still being expanded.
 
-| Material | Section | Status |
-|:---------|:--------|:-------|
-| [Course introduction](start-here/course-introduction/) | Start Here | <span class="label label-green">Available</span> |
-| [Berkeley Humanoid Lite reference](start-here/berkeley-humanoid-lite/) | Start Here | <span class="label label-green">Available</span> |
-| [Bill of materials (BOM)](hardware/bom/) | Robot Hardware | <span class="label label-green">Available</span> |
-| [Actuator assembly guide](hardware/actuator-assembly/) | Robot Hardware | <span class="label label-green">Available</span> |
-| [Motor driver guide](hardware/motor-driver/) | Robot Hardware | <span class="label label-green">Available</span> |
-| [USB-to-CAN adapter](hardware/usb-can-adapter/) | Robot Hardware | <span class="label label-green">Available</span> |
-| [Full robot assembly](hardware/robot-assembly/) | Robot Hardware | <span class="label label-yellow">Coming soon</span> |
-| [Onshape CAD](cad-to-robot/onshape-cad/) | From CAD to Robot | <span class="label label-yellow">Coming soon</span> |
-| [Onshape-to-robot guide](cad-to-robot/onshape-to-robot/) | From CAD to Robot | <span class="label label-yellow">Coming soon</span> |
-| [Actuator modeling exercise](simulation/actuator-modeling/) | Simulation and Learning | <span class="label label-yellow">Coming soon</span> |
-| [Isaac Sim guide](simulation/isaac-sim/) | Simulation and Learning | <span class="label label-yellow">Coming soon</span> |
-| [mjlab guide](simulation/mjlab/) | Simulation and Learning | <span class="label label-yellow">Coming soon</span> |
-| [RL and sim-to-real workflow](simulation/rl-sim-to-real/) | Simulation and Learning | <span class="label label-yellow">Coming soon</span> |
-| [Robot XML (v1)](downloads/robot-xml-v1/) | Downloads and Versions | <span class="label label-yellow">Coming soon</span> |
+| Section | Status |
+|:--------|:-------|
+| [Start Here](start-here/) | <span class="label label-green">Available</span> |
+| [Robot Hardware](hardware/) | <span class="label label-green">Available</span> |
+| [From CAD to Robot](cad-to-robot/) | <span class="label label-green">Available</span> |
+| [Simulation and Learning](simulation/) | <span class="label label-green">Available</span> |
+| [References](references/) | <span class="label label-blue">Partly available</span> |
+
+## Gallery
+
+The humanoid robots built by previous classes of this course.
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <figure style="flex: 1 1 280px; margin: 0; min-width: 0;">
+    <img src="{{ '/assets/images/home/asmr-2024.jpg' | relative_url }}" alt="ASMR 2024: students and Professor Yong-Lae Park gathered around the class's humanoid robot during a demo in the lab." style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px;">
+    <figcaption class="fs-2 text-grey-dk-000">ASMR 2024</figcaption>
+  </figure>
+  <figure style="flex: 1 1 280px; margin: 0; min-width: 0;">
+    <img src="{{ '/assets/images/home/asmr-2025.jpg' | relative_url }}" alt="ASMR 2025: students and Professor Yong-Lae Park posing with the class's humanoid robot, which holds drumsticks and a drum." style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px;">
+    <figcaption class="fs-2 text-grey-dk-000">ASMR 2025</figcaption>
+  </figure>
+</div>
